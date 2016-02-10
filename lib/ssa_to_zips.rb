@@ -4,8 +4,9 @@ require "json"
 module SsaToZips
 
   def self.data
-      @data ||= JSON.parse(File.read(File.expand_path("./data/ssa.json", File.dirname(__FILE__))))
-    end
+    path = File.expand_path("./data/ssa.json", File.dirname(__FILE__))
+    @data ||= JSON.parse(File.read(path))
+  end
 
   def self.map(county_code)
     result = data[county_code]

@@ -25,7 +25,7 @@ pass in a county code as a string, returns an array of string zip codes.
 ```ruby
 require 'ssa_to_zips'
 
-SsaToZip.map("01110") # => ["36558", "36904", "36908", "36910", "36912", "36913", "36915", "36916", "36919", "36921", "36922"]
+SsaToZips.map("01110") # => ["36558", "36904", "36908", "36910", "36912", "36913", "36915", "36916", "36919", "36921", "36922"]
 ```
 
 ## Development
